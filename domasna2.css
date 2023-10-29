@@ -1,0 +1,56 @@
+body {
+    font-family: arial, sans-serif;
+    font-style: oblique;
+    background-image: url(pizza2.jpg);
+   
+}
+
+table {
+    width: 50%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #ffd68983;
+}
+
+th {
+    background-color: #f75f31;
+    color: rgb(243, 161, 53);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 32px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #ee7b1e;
+    color: rgb(218, 39, 39);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #fd7e29;
+}
