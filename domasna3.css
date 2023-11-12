@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    color: #333;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#zborle-container {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dadeni-bukvi {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#dadeni-bukvi p {
+    margin: 0;
+}
+
+#zborle {
+    font-size: 24px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    width: 70px; 
+}
+
+#pogodi {
+    padding: 10px;
+    text-align: center;
+    margin-right: 5px;
+    width: 120px; 
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #31ec8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
