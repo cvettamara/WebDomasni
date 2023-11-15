@@ -7,16 +7,16 @@ function addToCart(productName, price, commentId, submitId, likeCountId) {
     
     cartItems.push(item);
 
-    // Update the cart display
+    
     updateCartDisplay();
     
-    // Update the comments display
+  
     updateCommentsDisplay(commentId, submitId);
 
-    // For simplicity, log the cart items to the console
+   
     console.log("Cart Items:", cartItems);
 
-    // Initialize likes
+
     document.getElementById(likeCountId).addEventListener('click', function () {
         likeProduct(likeCountId);
     });
@@ -64,14 +64,14 @@ function likeProduct(likeCountId) {
     likeCount.textContent = `${likes[productId - 1]} Likes`;
 }
 
-// Add a variable to store the total price
+
 let totalPrice = 0;
 
 function addToCart(productName, productPrice) {
-    // Assume you have a function to add the item to the cart list
+   
     addItemToCart(productName, productPrice);
 
-    // Update the total price
+   
     totalPrice += productPrice;
     updateCartTotal();
 }
@@ -84,7 +84,7 @@ function addItemToCart(productName, productPrice) {
 }
 
 function updateCartTotal() {
-    // Update the total price in the HTML
+   
     const totalPriceElement = document.getElementById('totalPrice');
     totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
 }
