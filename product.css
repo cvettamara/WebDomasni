@@ -80,8 +80,8 @@ header {
 
 .products-container {
   display: flex;
-  flex-direction: column;  /* Updated to column */
-  align-items: center;     /* Optional: Center the products horizontally */
+  flex-direction: column;  
+  align-items: center;     
 }
 
 .product {
@@ -198,32 +198,20 @@ footer {
 }
 
 .product button ion-icon {
-  /* Add any additional styles you need */
-  font-size: 28px; /* Adjust the size as needed */
+  font-size: 28px; 
 }
 
 .product button ion-icon[name="cart"],
 .product button ion-icon[name="chatbubble"],
 .product button ion-icon[name="heart"] {
-  /* Style specific to the icons */
-  color: #381a13; /* Adjust the color as needed */
+  color: #381a13; 
 }
 
 #totalPrice {
   font-size: 1.2em;
   font-weight: bold;
-  color: #381a13; /* or any other color you prefer */
+  color: #381a13; 
 }
 
-/* Media Query for Responsive Design */
-@media screen and (max-width: 600px) {
-  body {
-    background-size: auto; /* or any other suitable style for smaller screens */
-  }
 
-  .products-container {
-    /* Adjust styles for smaller screens */
-  }
 
-  /* Add more responsive styles as needed */
-}
