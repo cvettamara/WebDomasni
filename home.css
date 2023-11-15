@@ -222,7 +222,7 @@ footer {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: #aaa; /* Set initial color for inactive state */
+  color: #aaa; 
   pointer-events: none;
   transition: transform 0.3s, font-size 0.3s, color 0.3s;
 }
