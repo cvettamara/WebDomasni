@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Menu</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body class="home-page">
+  
+    <header>
+      <h1 class="logo">Tamara's Cookies</h1>
+      <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="products-container">
+<div class="product">  
+  <h2>CHOCOLATE CHIP COOKIE</h2>
+  <img src="product1.png" alt="CHOCOLATE CHIP COOKIE">
+  <p>Price: $1.50</p>
+  <button onclick="addToCart('CHOCOLATE CHIP COOKIE', 1.50, 'comment1', 'submit1', 'likeCount1')">
+    <ion-icon name="cart"></ion-icon>
+  </button>
+  <br>
+  <label for="comment1">Comments:</label>
+  <textarea id="comment1" rows="4" cols="20"></textarea>
+  <button onclick="submitComment('comment1', 'comments1')">
+    <ion-icon name="chatbubble"></ion-icon>
+  </button>
+  <button onclick="likeProduct('likeCount1')">
+    <ion-icon name="heart"></ion-icon>
+  </button>
+  <span id="likeCount1">0 Likes</span>
+  <div id="comments1"></div>
+</div>
+</div>
+
+<div class="products-container">
+<div class="product">
+  <h2>TRIPLE CHOCOLATE COOKIE</h2>
+  <img src="product2.png" alt="TRIPLE CHOCOLATE COOKIE">
+  <p>Price: $2.00</p>
+  <button onclick="addToCart('TRIPLE CHOCOLATE COOKIE', 2.00, 'comment2', 'submit2', 'likeCount2')">
+    <ion-icon name="cart"></ion-icon>
+  </button>
+  <br>
+  <label for="comment2">Comments:</label>
+  <textarea id="comment2" rows="4" cols="20"></textarea>
+  <button onclick="submitComment('comment2', 'comments2')">
+    <ion-icon name="chatbubble"></ion-icon>
+  </button>
+  <button onclick="likeProduct('likeCount2')">
+    <ion-icon name="heart"></ion-icon>
+  </button>
+  <span id="likeCount2">0 Likes</span>
+  <div id="comments2"></div>
+</div>
+</div>
+
+<div class="products-container">
+<div class="product">
+  <h2>RASPBERRY LEMON PIE COOKIE</h2>
+  <img src="product3.png" alt="RASPBERRY LEMON PIE COOKIE">
+  <p>Price: $2.00</p>
+  <button onclick="addToCart('PRASPBERRY LEMON PIE COOKIE', 2.00, 'comment3', 'submit3', 'likeCount3')">
+    <ion-icon name="cart"></ion-icon>
+  </button>
+  <br>
+  <label for="comment3">Comments:</label>
+  <textarea id="comment3" rows="4" cols="20"></textarea>
+  <button onclick="submitComment('comment3', 'comments3')">
+    <ion-icon name="chatbubble"></ion-icon>
+  </button>
+  <button onclick="likeProduct('likeCount3')">
+    <ion-icon name="heart"></ion-icon>
+  </button>
+  <span id="likeCount3">0 Likes</span>
+  <div id="comments3"></div>
+</div>
+</div>
+
+<div class="products-container">
+<div class="product"> 
+  <h2>S'MORES CHOCOLATE COOKIE</h2>
+  <img src="product4.png" alt="S'MORES CHOCOLATE COOKIE">
+  <p>Price: $3.00</p>
+  <button onclick="addToCart('SMORES CHOCOLATE COOKIE', 3.00, 'comment4', 'submit4', 'likeCount4')">
+    <ion-icon name="cart"></ion-icon>
+  </button>
+  <br>
+  <label for="comment4">Comments:</label>
+  <textarea id="comment4" rows="4" cols="20"></textarea>
+  <button onclick="submitComment('comment4', 'comments4')">
+    <ion-icon name="chatbubble"></ion-icon>
+  </button>
+  <button onclick="likeProduct('likeCount4')">
+    <ion-icon name="heart"></ion-icon>
+  </button>
+  <span id="likeCount4">0 Likes</span>
+  <div id="comments4"></div>
+</div>
+</div>
+
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalPrice">Total: $0.00</p>
+</div>
+
+<footer>
+  <p>Contact us at: contact@tamarascookies.com</p>
+  <p>&copy; 2023 Tamara's Cookies. All rights reserved.</p>
+</footer>
+
+<script src="product.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

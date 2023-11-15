@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamara's Cookies</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body class="home-page">
+
+  <header>
+    <h1 class="logo">Tamara's Cookies</h1>
+    <nav class="navigation">
+      <a href="home.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section id="login" class="hero">
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="email" id="emailInput" required>
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="password" id="passwordInput" required>
+            <label for="passwordInput">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <div class="categories">
+      <div class="category">
+        <h3>Chocolate Cookies</h3>
+        <a href="product.html">
+          <img src="category2.png" alt="Chocolate Cookies">
+          <p>The best cookies for chocolate lovers.</p>
+        </a>
+      </div>
+
+      <div class="category">
+        <h3>OG Cookies</h3>
+        <a href="product.html">
+          <img src="category1.png" alt="OG Cookies">
+          <p>If you want the original taste.</p>
+        </a>
+      </div>
+
+      <div class="category">
+        <h3>Frutie Cookie</h3>
+        <a href="product.html">
+          <img src="category3.png" alt="Frutie Cookie">
+          <p>So refreshing!</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at: contact@tamarascookies.com</p>
+    <p>&copy; 2023 Tamara's Cookies. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

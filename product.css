@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap');
+
+* {
+  font-family: 'Zilla Slab', serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('pozadinap.jpg') center/cover no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2em;
+  color: #162938;
+  user-select: none;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1em;
+  color: #162938;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #162938;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover {
+  color: #381a13;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;  /* Updated to column */
+  align-items: center;     /* Optional: Center the products horizontally */
+}
+
+.product {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 300px; 
+}
+
+.product h2 {
+  font-size: 1.5em;
+  color: #381a13;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #162938;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.product button {
+  background-color: #381a13;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+  background-color: #162938;
+}
+
+.product textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.product label {
+  display: block;
+  font-size: 1em;
+  color: #381a13;
+  margin-bottom: 5px;
+}
+
+.product span {
+  display: block;
+  font-size: 0.9em;
+  color: #162938;
+  margin-top: 10px;
+}
+
+.product img {
+  max-width: 100%; 
+  height: auto;    
+  border-radius: 10px; 
+}
+
+#cart {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #381a13;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #162938;
+}
+
+#cart h2 {
+  font-size: 1.5em;
+  color: #381a13;
+  margin-bottom: 10px;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+}
+
+#cartItems li {
+  font-size: 1em;
+  color: #162938;
+  margin-bottom: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: #162938;
+}
+
+.product button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.product button ion-icon {
+  /* Add any additional styles you need */
+  font-size: 28px; /* Adjust the size as needed */
+}
+
+.product button ion-icon[name="cart"],
+.product button ion-icon[name="chatbubble"],
+.product button ion-icon[name="heart"] {
+  /* Style specific to the icons */
+  color: #381a13; /* Adjust the color as needed */
+}
+
+#totalPrice {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #381a13; /* or any other color you prefer */
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: auto; /* or any other suitable style for smaller screens */
+  }
+
+  .products-container {
+    /* Adjust styles for smaller screens */
+  }
+
+  /* Add more responsive styles as needed */
+}

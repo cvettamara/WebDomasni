@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap');
+
+* {
+  font-family: 'Zilla Slab', serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('pozadinaabout.jpg') center/cover no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2em;
+  color: #e44d26;
+  user-select: none;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1em;
+  color: #070303;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #e44d26;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover {
+  color: #162938;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+section {
+  text-align: center;
+  padding: 50px 20px;
+  font-weight: bold;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 2em;
+  color: #e44d26;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  color: #e44d26;
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #e44d26;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #162938;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #162938;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #e44d26;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #162938;
+}
+
+textarea {
+  resize: vertical;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: #162938;
+}
