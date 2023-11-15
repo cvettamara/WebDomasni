@@ -1,4 +1,4 @@
-// Basic example for smooth scrolling
+
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.navigation a');
   
