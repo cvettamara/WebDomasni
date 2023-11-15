@@ -12,8 +12,8 @@
 
 body {
   display: flex;
-  flex-direction: column; /* Ensure the main content flows vertically */
-  min-height: 100vh; /* Make sure the body covers the entire viewport height */
+  flex-direction: column; 
+  min-height: 100vh; 
   background: url('pozadinaa.jpg') center/cover no-repeat;
   background-size: cover;
   margin: 0;
